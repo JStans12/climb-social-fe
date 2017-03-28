@@ -1,7 +1,6 @@
-.login-form {
+.form {
   margin: 15px;
   padding: 14px;
-  padding-top: 4px;
   width: 40%;
   background-color: whitesmoke;
   font-family: sans-serif;
@@ -9,7 +8,7 @@
   float: right;
 }
 
-.login-form h1 {
+.form .header {
   margin-bottom: 4px;
   padding: 10px 0;
   width: 100%;
@@ -19,27 +18,28 @@
   text-align: center;
 }
 
-.login-form form {
+.form form {
   margin: 0 auto;
 }
 
-.login-form form p {
+.form form .input-group {
   text-align: left;
+  margin: 18px 0px;
 }
 
-.login-form form p .input-label {
+.form form .input-group .input-label {
   overflow: hidden;
   display: inline-block;
 }
 
-.login-form form p .input-label h5{
+.form form .input-group .input-label h1{
   display: inline-block;
   margin: 4px 0px 0px 0px;
   font-size: 13px;
   float: left;
 }
 
-.login-input {
+.form input {
   -webkit-transition: all 0.30s ease-in-out;
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
@@ -58,7 +58,7 @@
   float: right;
 }
 
-.submit-button {
+.form button {
   display: block;
   margin: -4px 0px;
   padding: 4px 8px 4px 8px;
@@ -69,7 +69,7 @@
   float: right;
 }
 
-.submit-button:hover {
+.form button:hover {
   background-color: darkslategray;
   border: 1px solid darkslategray;
 

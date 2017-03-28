@@ -1,27 +1,22 @@
 import React, { Component } from 'react';
-import './LoginForm.css';
-import classNames from 'classnames';
+import '../stylesheets/Form.css';
 
 class LoginForm extends Component {
   render() {
-    const formClasses     = classNames("login-form");
-    const emailClasses    = classNames("login-input", "login-email");
-    const passwordClasses = classNames("login-input", "login-password");
-    const loginClasses    = classNames("submit-button", "login-button")
 
     return (
-      <div className={formClasses}>
-        <h1>Login</h1>
+      <div className="form">
+        <div className="header">Login</div>
         <form>
-          <p>
-            <div className="input-label"><h5>Email</h5></div>
-            <input className={emailClasses} type="text" name="user-email" />
-          </p>
-          <p>
-            <div className="input-label"><h5>Password</h5></div>
-            <input className={passwordClasses} type="password" name="user-password" />
-          </p>
-          <button className={loginClasses} type="submit">Submit</button>
+          <div className="input-group">
+            <div className="input-label"><h1>Email</h1></div>
+            <input className="login-email" type="text" name="user-email" />
+          </div>
+          <div className="input-group">
+            <div className="input-label"><h1>Password</h1></div>
+            <input className="login-password" type="password" name="user-password" />
+          </div>
+          <button className="login-submit" type="submit">Submit</button>
         </form>
       </div>
     );
