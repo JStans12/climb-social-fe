@@ -4,8 +4,8 @@ import '../stylesheets/simple-grid.css';
 import classNames from 'classnames';
 
 class SignupForm extends Component {
-  render () {
-    const formClasses = classNames("form", "col-2-4", "push-right");
+  render() {
+    const formClasses = classNames("form", "col-3-4", "push-right");
 
     return (
       <div className={formClasses}>

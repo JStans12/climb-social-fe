@@ -5,7 +5,7 @@ import classNames from 'classnames';
 
 class LoginForm extends Component {
   render() {
-    const formClasses = classNames("form", "col-2-4", "push-right");
+    const formClasses = classNames("form", "col-3-4", "push-right");
 
     return (
       <div className={formClasses}>
