@@ -34,6 +34,7 @@
 }
 
 .form form .input-group .input-label h1{
+  overflow: hidden;
   display: inline-block;
   margin: 4px 0px 0px 0px;
   font-size: 13px;
@@ -49,7 +50,7 @@
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  width: 70%;
+  width: 75%;
   height: 30px;
   border: 1px solid #ccc;
   margin: -4px 0px;
