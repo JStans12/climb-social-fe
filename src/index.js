@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import Login from './Login';
+import LoginForm from './LoginForm';
 import './index.css';
 
 ReactDOM.render(
-  <Login />,
+  <LoginForm />,
   document.getElementById('root')
 );
