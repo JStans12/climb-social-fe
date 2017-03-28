@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import '../stylesheets/form.css';
+import '../stylesheets/simple-grid.css';
+import classNames from 'classnames';
 
 class LoginForm extends Component {
   render() {
+    const formClasses = classNames("form", "col-2-4", "push-right");
 
     return (
-      <div className="form">
+      <div className={formClasses}>
         <div className="header">Login</div>
         <form>
           <div className="input-group">

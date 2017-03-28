@@ -4,7 +4,7 @@ import SignupForm from './components/SignupForm';
 import LoginForm from './components/LoginForm';
 
 ReactDOM.render(
-  <div>
+  <div className="grid">
     <SignupForm />
     <LoginForm />
   </div>,
