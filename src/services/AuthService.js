@@ -12,8 +12,8 @@ class AuthService {
     })
     .then(function(response) {
       let tokens = response.data["tokens"];
-      sessionStorage.setItem('auth_token', tokens.auth_token)
-      sessionStorage.setItem('refresh_token', tokens.refresh_token)
+      sessionStorage.setItem('auth_token', tokens.auth_token);
+      sessionStorage.setItem('refresh_token', tokens.refresh_token);
     })
     .catch(function(error) {
       console.log(error);
