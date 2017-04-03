@@ -19,7 +19,20 @@ class AuthService {
     })
     .catch(function(error) {
       console.log(error);
-  });
+    });
+  }
+
+  refresh() {
+    let refresh_token = sessionStorage.getItem("refresh_token");
+    axios.post(`${this.api}/refresh`, {
+      refresh_token: refresh_token
+    })
+    .then(function(response) {
+      console.log(response);
+    })
+    .catch(function(error) {
+      console.log(error);
+    })
   }
 }
 
