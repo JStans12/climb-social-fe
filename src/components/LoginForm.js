@@ -14,7 +14,9 @@ class LoginForm extends Component {
 
   handleClick(e) {
     e.preventDefault();
-    Auth.authenticate();
+    let email = "j"
+    let password = "p"
+    Auth.authenticate(email, password);
   }
 
   render() {
